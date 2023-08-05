@@ -1,35 +1,43 @@
-# Example app with styled-components using babel
+# Setup
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+- clone repo
+- npm install
+- rename .env.template to .env
+- fill in .env variables
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+# E-Mail provider
 
-## Preview
+https://app.getform.io
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+# Google Recaptcha v3
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components-babel)
+Uses google recaptcha to protect form e-mail endpoint.
+Generates gRecaptcha token and sends it to backend.
+Token gets validated on backend and checked against bot score.
+Score > 0.5 passes.
 
-## Deploy your own
+# Trackboxx
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Make a new trackboxx account and add your tracking id in the /document file.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components-babel&project-name=with-styled-components-babel&repository-name=with-styled-components-babel)
+# .env.template
 
-## How to use
+- Rename to .env
+- Fill in values
+- Add values on server side envs!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+# Theming
 
-```bash
-npx create-next-app --example with-styled-components-babel with-styled-components-babel-app
-```
+Uses custom build design system.
+To change the theming check the following files:
 
-```bash
-yarn create next-app --example with-styled-components-babel with-styled-components-babel-app
-```
+- theme.ts
+- /styles/cssStyles.ts
 
-```bash
-pnpm create next-app --example with-styled-components-babel with-styled-components-babel-app
-```
+# Fonts
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+If you want to add other fonts, check out the /fonts directory.
+
+- Add your woff/woff2 font files to /fonts/assets
+- add a handler function that loads your new font in the fonts directory
+- Add your newly added font handler in \_app tsx to the Layout component props

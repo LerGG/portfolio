@@ -1,33 +1,36 @@
-import type { AppProps } from 'next/app'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`
-
-interface ThemeInterface {
-  colors: {
-    primary: string
-  }
-}
-
-const theme: ThemeInterface = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "styled-components";
+import Head from "next/head";
+import { GlobalStyle } from "../src/theme/GlobalStyle";
+import { theme } from "../src/theme/theme";
+import Layout from "../src/components/Layout";
+import { gotham_medium } from "../src/fonts/gotham_medium";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import React from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="locale" content="en" />
+      </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout customfont={gotham_medium}>
+          <GoogleReCaptchaProvider
+            reCaptchaKey={process.env.GOOGLE_RECAPTCHA_PUBLIC_KEY}
+            scriptProps={{
+              async: false,
+              defer: false,
+              appendTo: "head",
+              nonce: undefined,
+            }}
+          >
+            <Component {...pageProps} />
+          </GoogleReCaptchaProvider>
+        </Layout>
       </ThemeProvider>
     </>
-  )
+  );
 }
