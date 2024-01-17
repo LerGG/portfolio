@@ -19,14 +19,23 @@ export default function ProjectSwiper() {
         className="Project Galery"
         modules={[Pagination, A11y, Autoplay]}
         spaceBetween={20}
-        slidesPerView={3}
-        slidesPerGroup={3}
+        slidesPerView={"auto"}
+        slidesPerGroup={1}
+        loopedSlides={3}
         pagination={{ clickable: true }}
         speed={5000}
         autoplay={{
           delay: 2500,
         }}
         loop={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loopedSlides: 1,
+            spaceBetween: 20,
+          },
+        }}
       >
         {projectSwipes.map((slide, index) => (
           <SwiperSlide key={slide.tag + index}>

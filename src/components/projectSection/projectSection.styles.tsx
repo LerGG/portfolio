@@ -4,7 +4,7 @@ import { theme } from "../../theme/theme";
 
 export const ProjectSectionWrapper = styled(StyledFlexBox)`
   flex-direction: column;
-  height: 100%;
+  height: 80vh;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
     height: 60vh;
   }

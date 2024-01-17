@@ -10,7 +10,7 @@ export const StyledNavBarWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: "center";
+  justify-content: center;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
     justify-content: space-between;
     align-items: flex-end;
@@ -61,7 +61,7 @@ export const StyledNavbarImgWrapper = styled.div`
   padding-right: 0.25rem;
   align-items: center;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
-    padding-left: 0%.5;
+    padding-left: 0.5%;
   }
 `;
 

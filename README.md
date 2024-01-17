@@ -7,7 +7,10 @@
 
 # E-Mail provider
 
-https://app.getform.io
+Contact form data is send via AWS SES email service.
+Setup the AWS keys as well as region.
+Note that to send emails to unverified accounts, AWS SES sandbox needs to be disabled.
+See: https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html
 
 # Google Recaptcha v3
 

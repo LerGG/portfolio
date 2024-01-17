@@ -6,12 +6,13 @@ import {
   StyledNavBarWrapper,
 } from "./navBar.styles";
 import React from "react";
+import { StyledLink } from "../Basic/StyledLink";
 
 export const NavBar = () => {
   return (
     <StyledNavBarWrapper>
       <StyledNavBarHeader style={gotham_bold.style}>
-        {"Timo Waszek".toUpperCase()}
+        <StyledLink href="/">{"Timo Waszek".toUpperCase()}</StyledLink>
       </StyledNavBarHeader>
       <div></div>
       <StyledNavBarListWrapper>

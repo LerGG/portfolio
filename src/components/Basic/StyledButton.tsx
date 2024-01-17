@@ -16,7 +16,6 @@ export const StyledButton = styled.button`
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  transition: 0.2s ease-in;
   &:hover {
     border: 1px solid ${theme.colors.primary};
   }

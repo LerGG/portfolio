@@ -10,4 +10,5 @@ export const StyledText = styled.div<{
   color: ${(props) => props.color || theme.colors.default};
   text-align: ${(props) => props.textAlign ?? "left"};
   font-size: ${(props) => props.size ?? "16px"};
+  line-height: 1.5;
 `;

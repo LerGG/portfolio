@@ -13,6 +13,25 @@ export const GlobalBody = css`
   }
 `;
 
+export const GlobalLink = css`
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &a:active {
+    color: #fff;
+  }
+  a:visited {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+  a:active {
+    color: #fff;
+  }
+`;
+
 export const GlobalHeadline1 = css`
   h1 {
     margin: 0;
@@ -36,6 +55,7 @@ export const GlobalHeadline2 = css`
     }
   }
 `;
+
 export const GlobalSwiper = css`
   :root {
     --swiper-theme-color: #ffffff !important;

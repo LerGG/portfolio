@@ -8,4 +8,5 @@ export const StyledHeadline2 = styled.h2<{
 }>`
   color: ${(props) => props.color || theme.colors.default};
   text-align: ${(props) => props.textAlign ?? "left"};
+  line-height: 1.5;
 `;

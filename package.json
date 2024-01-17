@@ -7,13 +7,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.385.0",
     "axios": "^1.4.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha-v3": "^1.10.1",
     "react-is": "^18.2.0",
-    "styled-components": "^5.3.5",
+    "styled-components": "5.3.5",
     "swiper": "8.4.2"
   },
   "devDependencies": {

@@ -1,11 +1,13 @@
 import { NavBarItem, ProjectSwipe } from "./interfaces/interfaces";
 
+export const email = "timo@waszek.de";
+
 export const skills = [
   "Front- & Backend Development",
   "Web 3.0",
   "Cloud",
   "Process Automation",
-];
+] as const;
 
 export const navbarItems: NavBarItem[] = [
   {
@@ -28,7 +30,7 @@ export const navbarItems: NavBarItem[] = [
     url: "https://www.twitch.tv/gg_nore",
     imgUrl: "/img/twitch_white.png",
   },
-];
+] as const;
 
 export const projectSwipes: ProjectSwipe[] = [
   {
@@ -108,4 +110,4 @@ export const projectSwipes: ProjectSwipe[] = [
     tag: "Web 3.0",
     location: "Ludwigsburg, Germany",
   },
-];
+] as const;

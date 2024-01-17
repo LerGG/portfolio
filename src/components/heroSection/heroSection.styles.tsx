@@ -22,7 +22,7 @@ export const HeroHeadline = styled(StyledHeadline1)`
 `;
 
 export const HeroSubHeadline = styled(StyledText)`
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   text-align: center;
   width: 100%;
   font-size: 24px;

@@ -17,6 +17,9 @@ module.exports = {
     ENDPOINT_GETFORM_IO: process.env.ENDPOINT_GETFORM_IO,
     GOOGLE_RECAPTCHA_PUBLIC_KEY: process.env.GOOGLE_RECAPTCHA_PUBLIC_KEY,
     GOOGLE_RECAPTCHA_PRIVATEC_KEY: process.env.GOOGLE_RECAPTCHA_PRIVATE_KEY,
+    SECRET_KEY_AWS: process.env.SECRET_KEY_AWS,
+    ACCESS_KEY_AWS: process.env.ACCESS_KEY_AWS,
+    REGION_AWS_SES: process.env.REGION_AWS_SES,
   },
   images: {
     domains: ["images.ctfassets.net"],

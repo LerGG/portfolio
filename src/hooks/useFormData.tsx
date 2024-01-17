@@ -55,7 +55,7 @@ export const useFormData = (
         // clear button msg after 3 secs
         setTimeout(() => {
           setBtnText("Send Message");
-        }, 3000);
+        }, 5000);
       });
     },
     [executeRecaptcha, endpoint]

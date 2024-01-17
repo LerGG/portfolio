@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { theme } from "../../theme/theme";
 
 export const StyledLink = styled(Link)`
+  text-decoration: underline solid transparent;
+  transition: text-decoration 250ms ease-in-out;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   color: #ffffff;
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline solid ${theme.colors.primary};
   }
 `;
