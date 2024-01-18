@@ -9,7 +9,7 @@ export const skills = [
   "Process Automation",
 ] as const;
 
-export const navbarItems: NavBarItem[] = [
+export const navbarItems: ReadonlyArray<NavBarItem> = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/timo-waszek-505b961a8/",
@@ -30,9 +30,9 @@ export const navbarItems: NavBarItem[] = [
     url: "https://www.twitch.tv/gg_nore",
     imgUrl: "/img/twitch_white.png",
   },
-] as const;
+];
 
-export const projectSwipes: ProjectSwipe[] = [
+export const projectSwipes: ReadonlyArray<ProjectSwipe> = [
   {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     imgUrl: "/img/pdig-logo.webp",
@@ -110,4 +110,4 @@ export const projectSwipes: ProjectSwipe[] = [
     tag: "Web 3.0",
     location: "Ludwigsburg, Germany",
   },
-] as const;
+];
