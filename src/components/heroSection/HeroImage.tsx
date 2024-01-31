@@ -23,6 +23,7 @@ export default function HeroImage() {
           alt={"abstract dark baground"}
           width={1920}
           height={1080}
+          priority={true}
         />
       </StyledAbsoluteWrapper>
     </>

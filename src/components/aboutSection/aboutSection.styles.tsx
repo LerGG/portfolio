@@ -28,7 +28,6 @@ export const StyledContenContainerAbout = styled(ContentContainer)`
   height: 100%;
   align-items: center;
   display: flex;
-  background-color: blue;
   padding-left: 1rem;
   padding-right: 1rem;
 `;
