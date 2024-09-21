@@ -11,6 +11,17 @@ export const GlobalBody = css`
     font-size: 16px;
     overflow-x: hidden;
   }
+  button,
+  input[type="submit"],
+  input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
 `;
 
 export const GlobalLink = css`

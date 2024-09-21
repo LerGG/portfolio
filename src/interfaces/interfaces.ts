@@ -1,8 +1,10 @@
+import { CardTag } from "../types/types";
+
 /**
  * CSS Text alignment options
  */
 export interface TextAlign {
-  textAlign: "left" | "right" | "center" | undefined;
+  textAlign: "left" | "right" | "center";
 }
 
 /**

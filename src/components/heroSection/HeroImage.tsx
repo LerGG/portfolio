@@ -12,18 +12,19 @@ export default function HeroImage() {
           style={{ opacity: "0.1" }}
           width={1920}
           height={1080}
-          src={"/img/timo-trans.png"}
+          src={"/img/black_waves.webp"}
           alt={"abstract dark baground"}
         />
       </StyledAbsoluteWrapper>
       <StyledAbsoluteWrapper>
         <Image
-          style={{ zIndex: 1 }}
-          src={"/img/black_waves_edit.jpg"}
+          style={{ zIndex: 1, objectFit: "cover" }}
+          src={"/img/black_waves_lerry.webp"}
           alt={"abstract dark baground"}
-          width={1920}
-          height={1080}
-          priority={true}
+          quality={20}
+          fill
+          sizes="100vw"
+          priority
         />
       </StyledAbsoluteWrapper>
     </>

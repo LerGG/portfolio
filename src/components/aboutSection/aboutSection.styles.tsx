@@ -36,7 +36,7 @@ export const StyledFlexBoxAboutWrapper = styled(StyledFlexBox)`
   width: 100%;
   height: 100%;
   flex-direction: column;
-  row-gap: 2rem;
+  column-gap: 4rem;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
     flex-direction: row;
     row-gap: 0rem;

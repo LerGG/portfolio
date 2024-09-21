@@ -71,7 +71,7 @@ export const StyledHeroHeadlineWrapper = styled.div`
   text-align: center;
   width: 100%;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
-    width: 80%;
+    width: 90%;
     text-align: left;
   }
 `;

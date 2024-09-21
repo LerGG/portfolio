@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { gotham_book } from "../../fonts/gotham_book";
 import { gotham_light } from "../../fonts/gotham_light";
 import { ContentContainer } from "../Basic/ContentContainer";
@@ -16,6 +17,7 @@ import {
 import React from "react";
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   return (
     <FullWidthHeroSectionWrapper>
       <HeroImage />
@@ -25,11 +27,10 @@ export default function HeroSection() {
           <div></div>
           <StyledHeroHeadlineWrapper>
             <HeroHeadline style={gotham_book.style}>
-              Multidisciplinary Software Engineer with a focus on Frontend &
-              Usability
+              {t("hero.headline")}
             </HeroHeadline>
             <HeroSubHeadline size="32px" style={gotham_light.style}>
-              B.Sc. Informatics
+              {t("hero.title")}
             </HeroSubHeadline>
             <HeroButtonWrapper>
               <StyledButton>test</StyledButton>

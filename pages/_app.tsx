@@ -8,6 +8,8 @@ import { gotham_medium } from "../src/fonts/gotham_medium";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import React from "react";
 
+import "../src/i18n/i18n";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>

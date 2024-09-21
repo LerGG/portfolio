@@ -7,6 +7,7 @@ import {
 } from "./navBar.styles";
 import React from "react";
 import { StyledLink } from "../Basic/StyledLink";
+import { NavBarLanguage } from "./NavBarLanguage";
 
 export const NavBar = () => {
   return (
@@ -14,7 +15,7 @@ export const NavBar = () => {
       <StyledNavBarHeader style={gotham_bold.style}>
         <StyledLink href="/">{"Timo Waszek".toUpperCase()}</StyledLink>
       </StyledNavBarHeader>
-      <div></div>
+      <NavBarLanguage />
       <StyledNavBarListWrapper>
         <NavBarList />
       </StyledNavBarListWrapper>

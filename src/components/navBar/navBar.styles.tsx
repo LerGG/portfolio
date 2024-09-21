@@ -6,7 +6,7 @@ import { StyledText } from "../Basic/StyledText";
 export const StyledNavBarWrapper = styled.div`
   height: 150px;
   width: 100%;
-  background: ${({ theme }) => theme.backgrounds.default};
+  background: ${theme.backgrounds.default};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@ export const StyledNavBarHeader = styled.div`
   padding-left: 0;
   font-size: 28px;
   letter-spacing: -2px;
-  width: 100%;
+  width: auto;
   justify-content: center;
   padding-bottom: 0.75rem;
   height: 50%;
@@ -53,6 +53,22 @@ export const StyledNavbarItem = styled(StyledText)`
 export const StyledNavbarSpacing = styled(StyledCharSpacing)`
   color: ${theme.colors.tertiary};
   font-size: 18px;
+`;
+
+export const StyledNavbarLanguageText = styled(StyledText)`
+  text-decoration: underline solid transparent;
+  transition: text-decoration 250ms ease-in-out;
+  &:hover {
+    text-decoration: underline solid ${theme.colors.primary};
+  }
+`;
+
+export const StyledNavBarLanguageWrapper = styled.div`
+  width: auto;
+  display: flex;
+  height: auto;
+  align-items: end;
+  padding-bottom: 0.25rem;
 `;
 
 export const StyledNavbarImgWrapper = styled.div`
