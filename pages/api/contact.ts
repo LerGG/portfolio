@@ -7,9 +7,11 @@ const contactHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     // Google recaptcha parameters
     const reqBody: ContactPostProps = req.body;
+    console.log("contact handler req body:", reqBody);
 
     try {
       const data = await gRecaptcha(reqBody.gReCaptchaToken);
+      console.log("gRecaptcha data:", data);
       // Score value 0-1 as bot probability
       if (data?.score > 0.5) {
         await sendMail(reqBody);
