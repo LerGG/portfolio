@@ -12,6 +12,9 @@ export const gRecaptcha = async (token: string): Promise<any> => {
       "Content-Type": "application/x-www-form-urlencoded",
     },
   };
+
+  console.log("Secret: ", process.env.GOOGLE_RECAPTCHA_PRIVATE_KEY);
+
   const gVerificationEndpnt = "https://www.google.com/recaptcha/api/siteverify";
   const recaptchGoogle = `${gVerificationEndpnt}?secret=${process.env.GOOGLE_RECAPTCHA_PRIVATE_KEY}&response=${token}`;
   const { data } = await axios.post(recaptchGoogle, null, config);
