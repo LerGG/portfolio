@@ -1,9 +1,10 @@
 import axios from "axios";
-import React from "react";
-import { BtnText } from "../types/types";
+import React, { useEffect } from "react";
+
 import { urlParamsToJson } from "../utils/urlParamsToJson";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ContactPostProps } from "../interfaces/interfaces";
+import { useTranslation } from "react-i18next";
 
 export interface ServerMsg {
   message: string;
@@ -11,15 +12,23 @@ export interface ServerMsg {
 
 export const useFormData = (
   endpoint: string
-): [boolean, (event: React.SyntheticEvent) => Promise<void>, BtnText] => {
+): [boolean, (event: React.SyntheticEvent) => Promise<void>, string] => {
+  const { t, i18n } = useTranslation();
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [loading, setLoading] = React.useState<boolean>(false);
-  const [btnText, setBtnText] = React.useState<BtnText>("Send Message");
+  const [btnText, setBtnText] = React.useState<string>(
+    t("mailSection.buttonSubmit.sendMessage")
+  );
+
+  // Refresh button text on language switch
+  useEffect(() => {
+    setBtnText(t("mailSection.buttonSubmit.sendMessage"));
+  }, [i18n.language, t]);
 
   const handleSubmit = React.useCallback(
     async (event: React.SyntheticEvent<HTMLFormElement>) => {
       setLoading(true);
-      setBtnText("Pending...");
+      setBtnText(t("mailSection.buttonSubmit.loading"));
       // return if capture not available yet
       if (!executeRecaptcha) {
         console.log("Execute recaptcha not yet available");
@@ -40,25 +49,25 @@ export const useFormData = (
           });
           // Success
           setLoading(false);
-          setBtnText("Successfully send!");
+          setBtnText(t("mailSection.buttonSubmit.success"));
           // Reset forms
           (event.target as HTMLFormElement).reset();
         } catch (error) {
           setLoading(false);
           console.log(error);
           if (error.response.data.message === "418") {
-            setBtnText("Bot detected!");
+            setBtnText(t("mailSection.buttonSubmit.botDetected"));
           } else {
-            setBtnText("Error! Send again!");
+            setBtnText(t("mailSection.buttonSubmit.error"));
           }
         }
         // clear button msg after 3 secs
         setTimeout(() => {
-          setBtnText("Send Message");
-        }, 5000);
+          setBtnText(t("mailSection.buttonSubmit.sendMessage"));
+        }, 3000);
       });
     },
-    [executeRecaptcha, endpoint]
+    [t, executeRecaptcha, endpoint]
   );
 
   return [loading, handleSubmit, btnText];

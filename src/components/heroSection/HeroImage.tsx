@@ -9,9 +9,10 @@ export default function HeroImage() {
       <StyledAbsoluteOverlay />
       <StyledAbsoluteWrapper style={{ zIndex: 3 }}>
         <Image
-          style={{ opacity: "0.1" }}
-          width={1920}
-          height={1080}
+          style={{ opacity: "0.1", objectFit: "cover" }}
+          sizes="100vw"
+          fill
+          quality={20}
           src={"/img/black_waves.webp"}
           alt={"abstract dark baground"}
         />

@@ -10,10 +10,3 @@ export type CardTag =
   | "Authoring"
   | "Coaching"
   | "Web 3.0";
-
-export type BtnText =
-  | "Send Message"
-  | "Pending..."
-  | "Successfully send!"
-  | "Error! Send again!"
-  | "Bot detected!";

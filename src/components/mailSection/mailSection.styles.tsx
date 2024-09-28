@@ -93,3 +93,11 @@ export const StyledSendMessageBtnWrapper = styled.div`
 export const StyledMailSectionSendMsgBtn = styled(StyledButton)`
   width: 100%;
 `;
+
+export const StyledMailSectionButtonTextWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+`;

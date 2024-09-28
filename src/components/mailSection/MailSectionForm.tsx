@@ -15,10 +15,13 @@ import {
 } from "./mailSection.styles";
 import React from "react";
 import { useFormData } from "../../hooks/useFormData";
-import { MailSectionButtonText } from "./MailSectionButtonText ";
+
+import { useTranslation } from "react-i18next";
+import { MailSectionButtonText } from "./MailSectionButtonText";
 
 export const MailSectionForm = () => {
   const [loading, handleSubmit, btnText] = useFormData("/api/contact");
+  const { t } = useTranslation();
   return (
     <MailSectionFlexBoxFormWrapper>
       <MailSectionFormWrapper>
@@ -27,7 +30,7 @@ export const MailSectionForm = () => {
           onSubmit={(event) => handleSubmit(event)}
         >
           <StyledLabelEmail style={gotham_medium.style}>
-            E-Mail
+            {t("mailSection.eMail")}
             <StyledInput
               required
               style={gotham_book.style}
@@ -40,9 +43,9 @@ export const MailSectionForm = () => {
           </StyledLabelEmail>
           <StyledNameSurnameWrapper>
             <StyledLabelName style={gotham_medium.style}>
-              Name
+              {t("mailSection.name")}
               <StyledInput
-                placeholder="Your Name"
+                placeholder={t("mailSection.namePlaceholder")}
                 type="text"
                 name="name"
                 required
@@ -50,11 +53,11 @@ export const MailSectionForm = () => {
               />
             </StyledLabelName>
             <StyledLabelSurname style={gotham_medium.style}>
-              Surname
+              {t("mailSection.surName")}
               <StyledInput
                 type="text"
                 name="surname"
-                placeholder="Your Surname"
+                placeholder={t("mailSection.surNamePlaceholder")}
                 autoComplete="last-name"
                 required
               />
@@ -62,7 +65,7 @@ export const MailSectionForm = () => {
           </StyledNameSurnameWrapper>
 
           <MailSectionStyledTextArea
-            placeholder="Type your message here"
+            placeholder={t("mailSection.placeholderText")}
             style={gotham_book.style}
             maxLength={2000}
             required

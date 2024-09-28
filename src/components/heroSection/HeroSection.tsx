@@ -15,9 +15,11 @@ import {
   StyledHeroHeadlineWrapper,
 } from "./heroSection.styles";
 import React from "react";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 export default function HeroSection() {
   const { t } = useTranslation();
+
   return (
     <FullWidthHeroSectionWrapper>
       <HeroImage />
@@ -33,7 +35,9 @@ export default function HeroSection() {
               {t("hero.title")}
             </HeroSubHeadline>
             <HeroButtonWrapper>
-              <StyledButton>test</StyledButton>
+              <StyledButton onClick={() => scrollToSection("mail-section")}>
+                {t("hero.buttonContact")}
+              </StyledButton>
             </HeroButtonWrapper>
           </StyledHeroHeadlineWrapper>
           <SkillsWrapper>

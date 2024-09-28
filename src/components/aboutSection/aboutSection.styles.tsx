@@ -20,7 +20,7 @@ export const FullWidthAboutSectionWrapper = styled(FullWidthWrapper)`
 `;
 
 export const StyledAboutBGImage = styled(Image)`
-  opacity: 0.025;
+  opacity: 0.05;
 `;
 
 export const StyledContenContainerAbout = styled(ContentContainer)`

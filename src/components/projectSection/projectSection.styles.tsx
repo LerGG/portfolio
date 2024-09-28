@@ -3,6 +3,7 @@ import { StyledFlexBox } from "../Basic/StyledFlexBox";
 import { theme } from "../../theme/theme";
 
 export const ProjectSectionWrapper = styled(StyledFlexBox)`
+  margin-top: 5vh;
   flex-direction: column;
   height: 80vh;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {

@@ -6,13 +6,15 @@ import {
 } from "./mailSection.styles";
 import { gotham_bold } from "../../fonts/gotham_bold";
 import { MailSectionForm } from "./MailSectionForm";
+import { useTranslation } from "react-i18next";
 
 export const MailSection = () => {
+  const { t } = useTranslation();
   return (
-    <MailSectionWrapper>
+    <MailSectionWrapper id="mail-section">
       <MailSectionContentContainer>
         <StyledMailSectionHeadline style={gotham_bold.style} textAlign="center">
-          Get in Touch
+          {t("mailSection.headline")}
         </StyledMailSectionHeadline>
         <MailSectionForm />
       </MailSectionContentContainer>
