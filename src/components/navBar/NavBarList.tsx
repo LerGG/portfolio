@@ -8,7 +8,6 @@ import {
 } from "./navBar.styles";
 import { StyledLink } from "../Basic/StyledLink";
 import Image from "next/image";
-import React from "react";
 
 export const NavBarList = () => {
   // removes last delimiter

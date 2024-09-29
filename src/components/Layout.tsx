@@ -1,11 +1,13 @@
 import { NextFont } from "next/dist/compiled/@next/font";
-import { ContentWrapper } from "./Basic/ContentWrapper";
-import { PageContainer } from "./Basic/PageContainer";
+
 import { Spacer } from "./Basic/Spacer";
 
 import { NavBar } from "./navBar/NavBar";
-import React from "react";
+
 import { Footer } from "./footer/Footer";
+import { PageContainer } from "./Basic/layout/PageContainer";
+import { ContentWrapper } from "./Basic/layout/ContentWrapper";
+import { StyledFlexBox } from "./Basic/StyledFlexBox";
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -14,7 +16,7 @@ export interface LayoutProps {
 
 export default function Layout({ children, customfont }: LayoutProps) {
   return (
-    <>
+    <StyledFlexBox>
       <NavBar />
       <Spacer />
       <PageContainer>
@@ -24,6 +26,6 @@ export default function Layout({ children, customfont }: LayoutProps) {
       </PageContainer>
       <Spacer />
       <Footer />
-    </>
+    </StyledFlexBox>
   );
 }

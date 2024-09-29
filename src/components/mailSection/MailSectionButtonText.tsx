@@ -2,7 +2,6 @@ import {
   StyledLoadSpinnerWrapper,
   StyledLoadSpinner,
 } from "../Basic/StyledLoadSpinner";
-import React from "react";
 
 import { StyledMailSectionButtonTextWrapper } from "./mailSection.styles";
 

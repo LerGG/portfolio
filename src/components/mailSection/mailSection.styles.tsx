@@ -22,17 +22,12 @@ export const MailSectionFlexBoxFormWrapper = styled(StyledFlexBox)`
 `;
 
 export const MailSectionFormWrapper = styled(StyledFlexBox)`
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
   align-items: center;
   padding: 0;
   margin: 0;
 `;
 
 export const MailSectionContentContainer = styled(StyledFlexBox)`
-  height: 100%;
-  flex-direction: column;
   row-gap: 2rem;
   align-items: center;
   @media (min-width: ${theme.breakpoints.sm}) {
@@ -40,7 +35,9 @@ export const MailSectionContentContainer = styled(StyledFlexBox)`
   }
 `;
 
-export const MailSectionWrapper = styled(StyledFlexBox)`
+export const MailSectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   height: 80vh;
   @media only screen and (min-width: ${theme.breakpoints.sm}) {
     height: 60vh;
@@ -59,6 +56,7 @@ export const MailSectionStyledTextArea = styled(StyledTextArea)`
   width: 100%;
   overflow-x: hidden;
   flex-grow: 1;
+  height: 100%;
 `;
 
 export const StyledLabelEmail = styled(StyledLabel)`
@@ -73,7 +71,10 @@ export const StyledLabelSurname = styled(StyledLabel)`
   width: 100%;
 `;
 
-export const StyledNameSurnameWrapper = styled(StyledFlexBox)`
+export const StyledNameSurnameWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: auto;
   flex-direction: column;
   column-gap: 0;
   row-gap: 1rem;

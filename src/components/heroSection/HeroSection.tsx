@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { gotham_book } from "../../fonts/gotham_book";
 import { gotham_light } from "../../fonts/gotham_light";
-import { ContentContainer } from "../Basic/ContentContainer";
 import { StyledButton } from "../Basic/StyledButton";
 import HeroImage from "./HeroImage";
 import { SkillList } from "./HeroSkillList";
@@ -14,8 +13,9 @@ import {
   SkillsWrapper,
   StyledHeroHeadlineWrapper,
 } from "./heroSection.styles";
-import React from "react";
+
 import { scrollToSection } from "../../utils/scrollToSection";
+import { ContentContainer } from "../Basic/layout/ContentContainer";
 
 export default function HeroSection() {
   const { t } = useTranslation();

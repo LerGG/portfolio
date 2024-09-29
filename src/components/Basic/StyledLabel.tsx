@@ -7,4 +7,5 @@ export const StyledLabel = styled.label`
   height: auto;
   flex-direction: column;
   row-gap: 0.5rem;
+  max-height: fit-content;
 `;

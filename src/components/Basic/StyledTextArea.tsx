@@ -14,8 +14,9 @@ export const StyledTextArea = styled.textarea`
   padding: 0;
   font-size: 16px;
   border: 1px solid transparent;
-  display: block;
+  display: flex;
   &:focus {
     border: 1px solid ${theme.colors.primary};
   }
+  height: 100%;
 `;

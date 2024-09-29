@@ -10,7 +10,6 @@ import {
   StyledContenContainerAbout,
   StyledFlexBoxAboutWrapper,
 } from "./aboutSection.styles";
-import React from "react";
 
 export const AboutSection = () => {
   return (

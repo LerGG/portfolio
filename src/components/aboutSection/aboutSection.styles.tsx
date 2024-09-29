@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { FullWidthWrapper } from "../Basic/FullWidthWrapper";
+
 import { theme } from "../../theme/theme";
 import Image from "next/image";
-import { ContentContainer } from "../Basic/ContentContainer";
+
 import { StyledFlexBox } from "../Basic/StyledFlexBox";
 import { StyledButton } from "../Basic/StyledButton";
+import { FullWidthWrapper } from "../Basic/layout/FullWidthWrapper";
+import { ContentContainer } from "../Basic/layout/ContentContainer";
 
 export const FullWidthAboutSectionWrapper = styled(FullWidthWrapper)`
   display: flex;

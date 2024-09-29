@@ -5,7 +5,7 @@ import {
   StyledNavBarListWrapper,
   StyledNavBarWrapper,
 } from "./navBar.styles";
-import React from "react";
+
 import { StyledLink } from "../Basic/StyledLink";
 import { NavBarLanguage } from "./NavBarLanguage";
 

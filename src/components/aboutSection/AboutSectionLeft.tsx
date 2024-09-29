@@ -1,7 +1,6 @@
 import { gotham_book } from "../../fonts/gotham_book";
 import { StyledText } from "../Basic/StyledText";
 import { StyledFlexBoxAboutLeft } from "./aboutSection.styles";
-import React from "react";
 
 export const AboutSectionLeft = () => {
   return (

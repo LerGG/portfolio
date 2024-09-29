@@ -6,7 +6,6 @@ import { theme } from "../src/theme/theme";
 import Layout from "../src/components/Layout";
 import { gotham_medium } from "../src/fonts/gotham_medium";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import React from "react";
 
 import "../src/i18n/i18n";
 

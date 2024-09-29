@@ -9,6 +9,14 @@ export const de = {
       privacy: "Datenschutz",
       disclaimer:
         "Die auf dieser Website verwendeten Bilder stammen aus Presse-Kits und sind Eigentum der jeweiligen Unternehmen. Sie werden ausschließlich zu redaktionellen Zwecken verwendet. Sollten Sie der Meinung sein, dass Ihre Urheberrechte verletzt wurden, kontaktieren Sie uns bitte umgehend.",
+      reCaptcha: {
+        google:
+          "Diese Seite ist geschützt durch reCAPTCHA und Google wofür folgende",
+        privacyPolicy: "Datenschutzerklärung",
+        and: "und",
+        TOS: "Nutzungsbedingungen",
+        apply: "gelten.",
+      },
     },
     hero: {
       headline:

@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * Converts form event to JSON data.
  *

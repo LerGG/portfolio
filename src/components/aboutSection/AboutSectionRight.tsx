@@ -1,7 +1,6 @@
 import { Spacer } from "../Basic/Spacer";
 import { StyledText } from "../Basic/StyledText";
 import { StyledAboutSectionRight } from "./aboutSection.styles";
-import React from "react";
 
 export const AboutSectionRight = () => {
   return (
@@ -12,14 +11,14 @@ export const AboutSectionRight = () => {
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         ut labore et dolore magna aliqua.
       </StyledText>
-      <Spacer space="2"></Spacer>
+      <Spacer $space="2"></Spacer>
       <StyledText size="18px" textAlign="justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         ut labore et dolore magna aliqua.
       </StyledText>
-      <Spacer space="2"></Spacer>
+      <Spacer $space="2"></Spacer>
       <StyledText size="18px" textAlign="justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
