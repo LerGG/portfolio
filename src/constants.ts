@@ -4,9 +4,9 @@ export const email = "timo@waszek.de";
 
 export const skills = [
   "Front- & Backend Development",
-  "Web 3.0",
+  "Requirements Engineering",
   "Cloud",
-  "Process Automation",
+  "Web 3.0",
 ] as const;
 
 export const navbarItems: ReadonlyArray<NavBarItem> = [

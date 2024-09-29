@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { FullWidthWrapper } from "../Basic/FullWidthWrapper";
 import { StyledText } from "../Basic/StyledText";
 import { StyledFlexBox } from "../Basic/StyledFlexBox";
 import { theme } from "../../theme/theme";
 import { StyledHeadline1 } from "../Basic/StyledHeadline1";
+import { FullWidthWrapper } from "../Basic/layout/FullWidthWrapper";
 
 export const FullWidthHeroSectionWrapper = styled(FullWidthWrapper)`
   height: 80vh;

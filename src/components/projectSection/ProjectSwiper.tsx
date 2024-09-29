@@ -1,7 +1,5 @@
 // import Swiper core and required modules
 
-import React from "react";
-
 import { StyledFlexBox } from "../Basic/StyledFlexBox";
 import { projectSwipes } from "../../constants";
 import { ProjectSlide } from "./ProjectSlide";

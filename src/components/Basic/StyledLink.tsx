@@ -3,7 +3,7 @@ import Link from "next/link";
 import { theme } from "../../theme/theme";
 
 export const StyledLink = styled(Link)`
-  text-decoration: underline solid transparent;
+  text-decoration: underline solid #fff;
   transition: text-decoration 250ms ease-in-out;
   margin: 0;
   padding: 0;

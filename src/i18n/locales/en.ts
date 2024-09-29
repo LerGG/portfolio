@@ -9,6 +9,13 @@ export const en = {
       privacy: "Privacy",
       disclaimer:
         "The images used on this website come from press kits and are the property of the respective companies. They are used exclusively for editorial purposes. If you believe that your copyright has been violated, please contact us immediately.",
+      reCaptcha: {
+        google: "This site is protected by reCAPTCHA and the Google,",
+        privacyPolicy: "Privacy Policy",
+        and: "and",
+        TOS: "Terms of Service",
+        apply: "apply.",
+      },
     },
     hero: {
       headline:

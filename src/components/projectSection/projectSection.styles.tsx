@@ -11,14 +11,15 @@ export const ProjectSectionWrapper = styled(StyledFlexBox)`
   }
 `;
 
-export const StyledProjectSlide = styled(StyledFlexBox)`
+export const StyledProjectSlide = styled.div`
   position: relative;
   box-sizing: border-box;
   display: flex;
-  transition: 0.2s ease-in;
-  border: 1px solid ${theme.border_colors.grey};
   width: 100%;
   height: 80%;
+  flex-direction: column;
+  transition: 0.2s ease-in;
+  border: 1px solid ${theme.border_colors.grey};
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.5rem;
@@ -50,7 +51,5 @@ export const StyledSlideTag = styled.div`
 `;
 
 export const StyledProjectSlideWrapper = styled(StyledFlexBox)`
-  height: 100%;
-  flex-direction: column;
   justify-content: center;
 `;

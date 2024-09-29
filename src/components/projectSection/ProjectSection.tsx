@@ -1,5 +1,5 @@
 import { gotham_bold } from "../../fonts/gotham_bold";
-import React from "react";
+
 import { StyledHeadline2 } from "../Basic/StyledHeadline2";
 import ProjectSwiper from "./ProjectSwiper";
 

@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
-export const Spacer = styled.div<{
-  space?: string;
-}>`
-  margin-top: ${(props) => props.space + "rem" || "2rem"};
+interface SpacerProps {
+  $space?: string;
+}
+
+/**
+ * @$space space in rem, should be a valid integter; default 2rem
+ */
+export const Spacer = styled.div<SpacerProps>`
+  margin-top: ${(props) => props.$space + "rem" || "2rem"};
 `;

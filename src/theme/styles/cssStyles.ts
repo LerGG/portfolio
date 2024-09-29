@@ -22,6 +22,9 @@ export const GlobalBody = css`
     cursor: pointer;
     outline: inherit;
   }
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
 `;
 
 export const GlobalLink = css`

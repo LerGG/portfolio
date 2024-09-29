@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MailSectionContentContainer,
   MailSectionWrapper,
@@ -12,7 +11,7 @@ export const MailSection = () => {
   const { t } = useTranslation();
   return (
     <MailSectionWrapper id="mail-section">
-      <MailSectionContentContainer>
+      <MailSectionContentContainer $direction="column">
         <StyledMailSectionHeadline style={gotham_bold.style} textAlign="center">
           {t("mailSection.headline")}
         </StyledMailSectionHeadline>

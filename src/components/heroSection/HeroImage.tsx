@@ -1,7 +1,6 @@
 import { StyledAbsoluteOverlay } from "../Basic/StyledAbsoluteOverlay";
 import { StyledAbsoluteWrapper } from "../Basic/StyledAbsoluteWrapper";
 import Image from "next/image";
-import React from "react";
 
 export default function HeroImage() {
   return (

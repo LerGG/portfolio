@@ -34,3 +34,12 @@ export interface ContactPostProps {
   message: string;
   gReCaptchaToken: string;
 }
+
+export interface RecaptchaResponse {
+  success?: boolean; // Whether the verification was successful
+  challenge_ts?: string; // Timestamp of the challenge (ISO format)
+  hostname?: string; // The hostname where the request originated
+  score?: number; // The score given by reCAPTCHA (0.0 - 1.0)
+  action?: string; // The action name for the request (e.g., 'enquiryFormSubmit')
+  "error-codes"?: string[]; // Optional: Error codes in case of failure
+}

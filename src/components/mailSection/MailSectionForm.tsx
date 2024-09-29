@@ -13,7 +13,7 @@ import {
   StyledSendMessageBtnWrapper,
   StyledMailSectionSendMsgBtn,
 } from "./mailSection.styles";
-import React from "react";
+
 import { useFormData } from "../../hooks/useFormData";
 
 import { useTranslation } from "react-i18next";

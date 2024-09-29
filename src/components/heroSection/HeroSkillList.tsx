@@ -3,7 +3,6 @@ import { gotham_light } from "../../fonts/gotham_light";
 import { theme } from "../../theme/theme";
 import { StyledCharSpacing } from "../Basic/StyledCharSpacing";
 import { StyledText } from "../Basic/StyledText";
-import React from "react";
 
 export const SkillList = () => {
   // removes last delimiter
